@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main() {
     long long n,t;
-    scanf("%d",&t);
+    scanf("%lld",&t);
     while(t--){
-        scanf("%d",&n);
-        printf("%d\n",n*n);
+        scanf("%lld",&n);
+        printf("%lld\n",n*n);
     }
     return 0;
 }
