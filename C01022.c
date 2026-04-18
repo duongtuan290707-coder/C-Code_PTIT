@@ -4,14 +4,14 @@ int main() {
     scanf("%d", &t);
     while (t--) {
     int n;
-    scanf("%d", &n);
+    scanf("%d\n", &n);
     int sum=0;
-    int x=n;
-    while (x>0) {
-        int a = x%10;
-        sum = sum + a;
-        x = x/10;
+    while(n>0) {
+        int chuso = n%10;
+        sum = sum + chuso;
+        n = n/10;
+    }
+    printf("%d\n", sum);
     } 
-    printf("%d ", sum); }
-    return 0;
+    return 0; 
 }
