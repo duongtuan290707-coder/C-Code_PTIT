@@ -7,7 +7,11 @@ int main() {
             printf("~");
         }
          for(int j=1; j<=b; j++) {
-            printf("*");
+            if(i==1||i==a||j==1||j==b) {
+                printf("*");
+            } else {
+                printf(".");
+            }
          }  
          printf("\n");
     }
