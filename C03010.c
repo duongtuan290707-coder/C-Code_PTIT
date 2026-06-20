@@ -15,11 +15,11 @@ int main() {
         int so = temp % 10;
         sum = sum + tonggiaithua(so);
         temp = temp / 10;
-    }
-    if(sum==n) {
-        printf("1");
-    } else {
-        printf("0");
-    }
-    return 0;
+    } 
+            for(int i=1; i<n; i++) {
+        if(sum == n) {
+            printf("%d ", n);
+        }
+        sum=0; }
+ return 0;
 }

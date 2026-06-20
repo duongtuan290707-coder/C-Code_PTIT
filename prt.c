@@ -32,8 +32,8 @@ int main() {
     }
 } 
 if(dem % 10 !=0) {
-    printf("\n");
-} }
+    printf("\n");}
+ }
 printf("\n");
     return 0;
 }
