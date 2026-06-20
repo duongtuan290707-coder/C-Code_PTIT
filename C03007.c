@@ -11,18 +11,25 @@ int lietke(int n) {
     while(temp>9) {
      temp /= 10;
     }    
-    if(temp==r) return 1;
+    if(temp==r) {
+        return 1; }
 }
 int main() {
     int t;
     scanf("%d", &t);
     while(t--) {
         int a,b;
+        int count=0;
         scanf("%d %d", &a, &b);
         for(int i=a; i<=b; i++) {
-            if(lietke(i)==1)
+            if(lietke(i)==1) {
              printf("%d ", i);
+            count++; }
         }
+        if(count==10) {
+                printf("\n");
+                count=0;
+             }
     }
     return 0;
 }
