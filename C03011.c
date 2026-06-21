@@ -16,14 +16,20 @@ int strong(int n) {
     }
     if(sum==n) {
         return 1;
-    } else {
-        return 0;}
+    } 
+        return 0;
+    
 }
 int main() {
-    int n,i;
-    scanf("%d %d", &n);
-    for(i=1; i<n-1; i++) {
-        if(strong(i)) {
+    int a,b,i;
+    scanf("%d %d", &a,&b);
+    if(a>b) {
+        int temp=a;
+        a = b;
+        b = temp;
+    }
+    for(i=a; i<=b; i++) {
+        if(strong(i) == 1) {
             printf("%d ", i);
         }
     }
