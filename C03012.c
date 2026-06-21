@@ -13,7 +13,9 @@ int kiemTraFibonacci(int n) {
     }
     if (fn == n) {
         return 1;
-    } 
+    } else {
+        return 0;
+    }
 }
 int main() {
     int n;
