@@ -1,1 +1,23 @@
+<<<<<<< HEAD
 t = int(input())
+=======
+import math
+def kiemtrant(n):
+    if n<2:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n%i == 0:
+            return False
+    return True
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    k = 0
+    for i in range(1, n):
+        if math.gcd(i,n) == 1:
+            k +=1
+    if kiemtrant(k) == True:
+        print("YES")
+    else:
+        print("NO")
+>>>>>>> 1cf37861f59e4fd3c88328dabb5af0a315874ff3
