@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 t = int(input())
-=======
 import math
 def kiemtrant(n):
     if n<2:
@@ -20,4 +18,3 @@ for _ in range(t):
         print("YES")
     else:
         print("NO")
->>>>>>> 1cf37861f59e4fd3c88328dabb5af0a315874ff3
