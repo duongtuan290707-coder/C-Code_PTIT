@@ -19,12 +19,8 @@ def solve():
         if x not in seen:
             b.append(x)
             seen.add(x)
-            
-    # Bước 2: Tìm vị trí i chia mảng
     tong_toan_mang = sum(b)
     tong_trai = 0
-    
-    # Duyệt qua từng vị trí i trong mảng B
     for i in range(len(b)):
         tong_trai += b[i]
         tong_phai = tong_toan_mang - tong_trai
